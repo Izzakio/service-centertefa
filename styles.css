@@ -334,6 +334,11 @@ textarea {
   color: var(--text);
 }
 
+.contact-details a {
+  color: white;
+  text-decoration: none;
+}
+
 .form-status {
   margin-top: 0.4rem;
   color: var(--accent);
