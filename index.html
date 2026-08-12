@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Website</title>
+    <meta name="description" content="Template website sederhana yang mudah diedit." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <a href="#" class="logo">Service Center</a>
+        <div class="nav-links">
+          <a href="#about">Tentang</a>
+          <a href="#services">Layanan</a>
+          <a href="#contact">Kontak</a>
+        </div>
+      </nav>
+
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">Percayakan Barang Anda Kepada Kami</p>
+          <h1>Siap Melayani dan Menangani Barang Elektronik anda</h1>
+          <p class="hero-text">
+            Ubah teks ini sesuai kebutuhan. Template ini cocok untuk bisnis,
+            portofolio, atau landing page.
+          </p>
+          <a href="#contact" class="btn">Hubungi Kami</a>
+        </div>
+
+        <div class="panel">
+          <h3>Keunggulan Kami</h3>
+          <p>Kami Menerima Semua Jenis Kerusakan Elektronik.</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section container">
+        <h2>Tentang Kami</h2>
+        <p>Service Center ini adalah layanan perbaikan dan perawatan 
+            berbagai perangkat elektronik dengan mengutamakan kualitas, ketelitian, dan 
+            kepuasan pelanggan. Kami siap membantu menangani kerusakan elektronik 
+            secara profesional dengan layanan yang terpercaya dan bergaransi.</p>
+      </section>
+
+      <section id="services" class="section section-alt">
+        <div class="container">
+          <h2>Layanan / Produk</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Item 1</h3>
+              <p>Jelaskan layanan atau produk pertama Anda.</p>
+            </article>
+            <article class="card">
+              <h3>Item 2</h3>
+              <p>Jelaskan layanan atau produk kedua Anda.</p>
+            </article>
+            <article class="card">
+              <h3>Item 3</h3>
+              <p>Jelaskan layanan atau produk ketiga Anda.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <h2>Kontak</h2>
+        <p>Isi form atau tambahkan detail kontak Anda di bagian ini.</p>
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formsubmit.co/izzakio99@gmail.com"
+          method="POST"
+        >
+          <input type="text" id="name" name="name" placeholder="Nama Anda" required />
+          <input type="email" id="email" name="email" placeholder="Email Anda" required />
+          <textarea id="message" name="message" rows="4" placeholder="Pesan Anda" required></textarea>
+          <input type="hidden" name="_subject" value="Pesan baru dari website" />
+          <input type="hidden" name="_captcha" value="false" />
+          <button type="submit" class="btn">Kirim</button>
+          <p id="formStatus" class="form-status">Mengirim...</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© 2026 Service Center Te-Fa. Semua hak dilindungi.</p>
+      </div>
+    </footer>
+  </body>
+</html>
