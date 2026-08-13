@@ -76,13 +76,12 @@ img {
 }
 
 .brand-tag {
-  color: #ff1f1f;
-  opacity: 0.95;
+  color: #dbeafe;
+  opacity: 0.9;
   font-size: 0.72rem;
   white-space: nowrap;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .nav-links {
