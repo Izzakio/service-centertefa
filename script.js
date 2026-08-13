@@ -1,22 +1,43 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
+  const statusText = document.getElementById('formStatus');
+  const returnToSiteBtn = document.getElementById('returnToSite');
   const phoneNumber = '628981056300';
-  const defaultMessage = 'Halo Service Center Te-Fa, saya ingin bertanya tentang layanan Anda.';
 
   if (form) {
     form.addEventListener('submit', (event) => {
-      form.classList.add('is-sending');
+      event.preventDefault();
 
-      const name = document.getElementById('name')?.value || '';
-      const email = document.getElementById('email')?.value || '';
-      const message = document.getElementById('message')?.value || '';
+      const name = document.getElementById('name')?.value?.trim() || '';
+      const email = document.getElementById('email')?.value?.trim() || '';
+      const message = document.getElementById('message')?.value?.trim() || '';
+
+      if (!name || !email || !message) {
+        if (statusText) {
+          statusText.textContent = 'Harap isi semua field sebelum mengirim.';
+        }
+        return;
+      }
+
       const whatsappText = `Halo Service Center Te-Fa, nama saya ${name}. Email saya ${email}. Pesan: ${message}`;
-      const encodedText = encodeURIComponent(whatsappText);
-      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappText)}`;
 
-      setTimeout(() => {
-        window.open(whatsappUrl, '_blank');
-      }, 500);
+      if (statusText) {
+        statusText.textContent = 'Mengalihkan ke WhatsApp...';
+      }
+
+      if (returnToSiteBtn) {
+        returnToSiteBtn.hidden = false;
+      }
+
+      window.open(whatsappUrl, '_blank');
+      form.reset();
+
+      if (statusText) {
+        setTimeout(() => {
+          statusText.textContent = 'Pesan berhasil dipersiapkan di WhatsApp.';
+        }, 300);
+      }
     });
   }
 });

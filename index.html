@@ -231,10 +231,18 @@
       <section id="contact" class="section container">
         <h2>Kontak</h2>
         <p>Isi form untuk mengirim pesan ke email dan membuka chat WhatsApp secara langsung.</p>
+
         <div class="contact-details">
-          <p>WhatsApp: <a href="https://wa.me/628981056300?text=Halo%20Service%20Center%20Te-Fa" target="_blank" rel="noopener">+62 898-1056-300</a></p>
-          <p>Email: <a href="mailto:tefaelinnedutase@gmail.com">tefaelinnedutase@gmail.com</a></p>
+          <a class="contact-button whatsapp" href="https://wa.me/628981056300?text=Halo%20Service%20Center%20Te-Fa%0A%0ASaya%20datang%20dari%20website%20Service%20Center%20Te-Fa&app_absent=0" target="_blank" rel="noopener">
+            <span class="icon">✆</span>
+            <span>+62 898-1056-300</span>
+          </a>
+          <a class="contact-button email" href="mailto:tefaelinnedutase@gmail.com">
+            <span class="icon">✉</span>
+            <span>tefaelinnedutase@gmail.com</span>
+          </a>
         </div>
+
         <form
           class="contact-form"
           id="contactForm"
@@ -248,6 +256,7 @@
           <input type="hidden" name="_captcha" value="false" />
           <button type="submit" class="btn">Kirim</button>
           <p id="formStatus" class="form-status">Mengirim...</p>
+          <a id="returnToSite" class="return-site-btn" href="index.html" hidden>Kembali ke Website</a>
         </form>
       </section>
     </main>
