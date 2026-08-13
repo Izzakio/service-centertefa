@@ -362,7 +362,6 @@ main {
   margin-bottom: 1.5rem;
 }
 
-
 .cards,
 .process-grid,
 .feature-grid,
@@ -426,7 +425,6 @@ main {
   position: relative;
   padding-top: 1.5rem;
 }
-
 
 .quote-card::before {
   content: '“';
@@ -590,4 +588,3 @@ textarea {
     padding: 3rem 0;
   }
 }
-
