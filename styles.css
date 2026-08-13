@@ -76,12 +76,13 @@ img {
 }
 
 .brand-tag {
-  color: #dbeafe;
-  opacity: 0.9;
+  color: #ff1f1f;
+  opacity: 0.95;
   font-size: 0.72rem;
   white-space: nowrap;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .nav-links {
@@ -588,4 +589,3 @@ textarea {
     padding: 3rem 0;
   }
 }
-
